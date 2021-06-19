@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% if not user %}
+  <div class="container">
+    <div class="mt-1">
+      <h1>Login</h1>
+    </div>
+    <p class="lead">Please Login to get the Auth Token</p>
+    <a type="button" class="btn btn-default" href="/auth">Login</a>
+  </div>
+{% else %}
+	<div class="container">
+	  <h1> Hi {{ user.display_name }} :) </h1>
+{% endif %}
+{% endblock %}
