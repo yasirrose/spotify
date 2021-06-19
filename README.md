@@ -11,6 +11,16 @@ We have used Flask for the web view as we need to show the ranking on the page.
 
 Run the following commands to get the code from GitHub and run locally this will run the project locally I have created an spotify app and used the Oauth web workflow to get the token and call the API and then with the help of refresh token get the new token if the token is expired.
 
+This app is development mod so the login users is limited if you want to test it and want to use your app Add the CLIENT ID and CLIENT SECRET in the ``spotify.py``
+
+| NAME                                      | default             | required                      | type    | description                         |
+|-------------------------------------------|---------------------|-------------------------------|---------|------------------------------------|
+| CLIENT_ID                                 | "unspecified"       | :white_check_mark:            | str     | Spotify app client id              |
+| CLIENT_SECRET                             | False               | :white_check_mark:            | str     | Spotify app client secret          |
+
+And add the callback URL to your spotify app.
+
+
 ###Windows instructions
 ```
 git clone https://github.com/yasirrose/spotify.git
@@ -47,6 +57,7 @@ python3 app.py
 **Video Demo**
 
 [Click here to view the demo](https://www.loom.com/share/22331dcf27234d4e93d6c300e224596c)
+
 
 **Note:** Feel free to contact me if you have any query.
 
